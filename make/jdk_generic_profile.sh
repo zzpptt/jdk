@@ -326,6 +326,9 @@ if [ "${ZERO_BUILD}" = true ] ; then
     s390)
       ZERO_ARCHFLAG="-m31"
       ;;
+    aarch64)
+      ZERO_ARCHFLAG=""
+      ;;
     *)
       ZERO_ARCHFLAG="-m${ARCH_DATA_MODEL}"
   esac
